@@ -36,12 +36,12 @@
     /* ИНЧ.МАРКЕТ brand */
     --inch-orange: #ff5f1f;
     --inch-orange-light: #ff8c5a;
-    --inch-dark: #0d0f14;
-    --inch-dark-2: #161920;
-    --inch-dark-3: #1e2230;
-    --inch-text: #f0f2f8;
-    --inch-text-muted: rgba(240, 242, 248, 0.55);
-    --inch-border: rgba(255, 255, 255, 0.08);
+    --inch-dark: #ffffff;
+    --inch-dark-2: #fff8f4;
+    --inch-dark-3: #fff1e9;
+    --inch-text: #1a1410;
+    --inch-text-muted: rgba(26, 20, 16, 0.55);
+    --inch-border: rgba(0, 0, 0, 0.08);
   }
 
   .dark {
@@ -110,7 +110,7 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(13, 15, 20, 0.92);
+  background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--inch-border);
 }
@@ -169,7 +169,7 @@
 
 .inch-nav-link:hover {
   color: var(--inch-text);
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(0, 0, 0, 0.05);
 }
 
 .inch-burger {
@@ -251,7 +251,7 @@
   font-family: "Golos Text", sans-serif;
   font-weight: 600;
   font-size: 1rem;
-  border: 1.5px solid rgba(255, 255, 255, 0.2);
+  border: 1.5px solid rgba(0, 0, 0, 0.18);
   border-radius: 12px;
   padding: 0.875rem 1.75rem;
   cursor: pointer;
@@ -262,8 +262,8 @@
 }
 
 .inch-btn-outline:hover {
-  border-color: rgba(255, 255, 255, 0.4);
-  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--inch-orange);
+  background: rgba(255, 95, 31, 0.05);
   transform: translateY(-1px);
 }
 
@@ -271,7 +271,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(0, 0, 0, 0.04);
   color: var(--inch-text);
   font-family: "Golos Text", sans-serif;
   font-weight: 600;
@@ -288,8 +288,8 @@
 }
 
 .inch-btn-ghost:hover {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.08);
+  border-color: rgba(0, 0, 0, 0.15);
 }
 
 /* BADGE */
@@ -337,14 +337,15 @@
   background:
     radial-gradient(
       ellipse 80% 60% at 60% 40%,
-      rgba(255, 95, 31, 0.12) 0%,
+      rgba(255, 160, 80, 0.18) 0%,
       transparent 70%
     ),
     radial-gradient(
       ellipse 50% 50% at 10% 80%,
-      rgba(255, 95, 31, 0.06) 0%,
+      rgba(255, 220, 150, 0.18) 0%,
       transparent 60%
-    );
+    ),
+    linear-gradient(160deg, #fff8f0 0%, #ffffff 60%, #fff4ee 100%);
 }
 
 .inch-hero-glow {
@@ -355,7 +356,7 @@
   height: 600px;
   background: radial-gradient(
     circle,
-    rgba(255, 95, 31, 0.15) 0%,
+    rgba(255, 140, 60, 0.2) 0%,
     transparent 70%
   );
   pointer-events: none;
@@ -451,9 +452,9 @@
 
 .inch-hero-float {
   position: absolute;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 95, 31, 0.15);
   border-radius: 12px;
   padding: 0.6rem 1rem;
   display: flex;
@@ -531,7 +532,7 @@
 
 /* ADVANTAGES */
 .inch-adv-card {
-  background: rgba(255, 255, 255, 0.03);
+  background: #ffffff;
   border: 1px solid var(--inch-border);
   border-radius: 16px;
   padding: 1.75rem;
@@ -579,7 +580,7 @@
   justify-content: center;
   gap: 0.5rem;
   margin-bottom: 3rem;
-  background: rgba(255, 255, 255, 0.04);
+  background: #f3f4f6;
   border: 1px solid var(--inch-border);
   border-radius: 14px;
   padding: 0.35rem;
@@ -624,7 +625,7 @@
   align-items: center;
   text-align: center;
   padding: 2rem 1.5rem;
-  background: rgba(255, 255, 255, 0.02);
+  background: #ffffff;
   border: 1px solid var(--inch-border);
   border-radius: 16px;
   position: relative;
@@ -660,7 +661,7 @@
   z-index: 2;
   width: 32px;
   height: 32px;
-  background: var(--inch-dark-3);
+  background: #ffffff;
   border: 1px solid var(--inch-border);
   border-radius: 50%;
   display: flex;
@@ -711,11 +712,11 @@
 
 /* BROWSER DEMO */
 .inch-browser {
-  background: var(--inch-dark-2);
+  background: #ffffff;
   border: 1px solid var(--inch-border);
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.1);
 }
 
 .inch-browser-bar {
@@ -723,7 +724,7 @@
   align-items: center;
   gap: 1rem;
   padding: 0.75rem 1rem;
-  background: var(--inch-dark-3);
+  background: #f5f5f5;
   border-bottom: 1px solid var(--inch-border);
 }
 
@@ -736,13 +737,13 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(0, 0, 0, 0.15);
   display: block;
 }
 
 .inch-browser-url {
   flex: 1;
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(0, 0, 0, 0.05);
   border-radius: 6px;
   padding: 0.3rem 0.75rem;
   font-size: 0.8rem;
@@ -798,7 +799,7 @@
 
 .inch-shop-item {
   aspect-ratio: 1;
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(0, 0, 0, 0.06);
   border-radius: 8px;
   animation: shimmer 2s ease-in-out infinite alternate;
 }
@@ -814,7 +815,7 @@
 
 /* TARIFFS */
 .inch-tariff-card {
-  background: rgba(255, 255, 255, 0.03);
+  background: #ffffff;
   border: 1px solid var(--inch-border);
   border-radius: 20px;
   padding: 2rem;
@@ -885,7 +886,7 @@
 
 /* REVIEWS */
 .inch-review-card {
-  background: rgba(255, 255, 255, 0.03);
+  background: #ffffff;
   border: 1px solid var(--inch-border);
   border-radius: 16px;
   padding: 1.75rem;
@@ -961,7 +962,7 @@
 }
 
 .inch-faq-item {
-  background: rgba(255, 255, 255, 0.03);
+  background: #ffffff;
   border: 1px solid var(--inch-border);
   border-radius: 14px;
   overflow: hidden;
@@ -1015,13 +1016,8 @@
 
 /* CONTACTS */
 .inch-contacts {
-  background: linear-gradient(
-    160deg,
-    #1a0a00 0%,
-    var(--inch-dark) 50%,
-    #0a0d15 100%
-  );
-  border-top: 1px solid var(--inch-border);
+  background: linear-gradient(160deg, #ff5f1f 0%, #ff8c3a 60%, #ffb347 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .inch-contacts-inner {
@@ -1042,20 +1038,20 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  color: var(--inch-text-muted);
+  color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   font-size: 0.9rem;
   transition: color 0.2s;
 }
 
 .inch-contact-link:hover {
-  color: var(--inch-orange);
+  color: #ffffff;
 }
 
 /* FORM */
 .inch-form {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid var(--inch-border);
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 20px;
   padding: 2rem;
   display: flex;
@@ -1078,8 +1074,8 @@
 }
 
 .inch-input {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1.5px solid var(--inch-border);
+  background: rgba(255, 255, 255, 0.7);
+  border: 1.5px solid rgba(255, 255, 255, 0.5);
   border-radius: 10px;
   padding: 0.75rem 1rem;
   color: var(--inch-text);
@@ -1092,7 +1088,7 @@
 }
 
 .inch-input::placeholder {
-  color: rgba(240, 242, 248, 0.3);
+  color: rgba(26, 20, 16, 0.4);
 }
 
 .inch-input:focus {
@@ -1105,8 +1101,8 @@
 
 /* FOOTER */
 .inch-footer {
-  background: var(--inch-dark);
-  border-top: 1px solid var(--inch-border);
+  background: #1a1410;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
   padding: 3rem 0 1.5rem;
 }
 
@@ -1115,7 +1111,7 @@
   justify-content: space-between;
   gap: 3rem;
   padding-bottom: 2rem;
-  border-bottom: 1px solid var(--inch-border);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   flex-wrap: wrap;
 }
 
@@ -1131,7 +1127,7 @@
 .inch-footer-tagline {
   font-family: "Golos Text", sans-serif;
   font-size: 0.8rem;
-  color: var(--inch-text-muted);
+  color: rgba(255, 255, 255, 0.5);
   font-weight: 400;
   margin-top: 0.25rem;
 }
@@ -1151,7 +1147,7 @@
 .inch-footer-col-title {
   font-size: 0.75rem;
   font-weight: 700;
-  color: var(--inch-text);
+  color: rgba(255, 255, 255, 0.9);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-bottom: 0.25rem;
@@ -1160,7 +1156,7 @@
 .inch-footer-link {
   background: none;
   border: none;
-  color: var(--inch-text-muted);
+  color: rgba(255, 255, 255, 0.5);
   font-family: "Golos Text", sans-serif;
   font-size: 0.875rem;
   cursor: pointer;
@@ -1182,7 +1178,7 @@
   gap: 1rem;
   flex-wrap: wrap;
   font-size: 0.8rem;
-  color: var(--inch-text-muted);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .inch-footer-legal {
