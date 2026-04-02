@@ -422,33 +422,6 @@ export default function Index() {
         </div>
       </section>
 
-      {/* REVIEWS */}
-      <section id="reviews" className="inch-section">
-        <div className="inch-container">
-          <div className="inch-section-head">
-            <div className="inch-badge-outline">Отзывы</div>
-            <h2 className="inch-section-title">Что говорят <span className="inch-accent">продавцы</span></h2>
-          </div>
-          <div className="inch-grid-3">
-            {REVIEWS.map((r, i) => (
-              <div key={i} className="inch-review-card">
-                <div className="inch-review-stars">
-                  {"★".repeat(r.stars)}
-                </div>
-                <p className="inch-review-text">«{r.text}»</p>
-                <div className="inch-review-author">
-                  <div className="inch-review-avatar">{r.avatar}</div>
-                  <div>
-                    <div className="inch-review-name">{r.name}</div>
-                    <div className="inch-review-role">{r.role}</div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* FAQ */}
       <section id="faq" className="inch-section inch-section-dark">
         <div className="inch-container inch-faq-wrap">
